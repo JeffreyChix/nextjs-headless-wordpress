@@ -49,6 +49,12 @@ export const SEO = ({
       <meta property="og:type" content={type} />
       <meta property="og:image" content={image} />
 
+      {/* Google Site Ownership Verification */}
+      <meta
+        name="google-site-verification"
+        content="a0Mzfa1xwDcidlG7r7CQwBBN_DPZCqIWkBJ3SXCGT38"
+      />
+
       <link rel="shortcut icon" href={faviconIco.src} />
       <link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon.src} />
       <link rel="icon" type="image/png" sizes="32x32" href={favicon32.src} />
