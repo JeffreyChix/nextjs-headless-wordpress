@@ -1,12 +1,17 @@
 import { GetStaticProps } from "next";
 
 import { Hero } from "@/components/Hero";
+import { SEO } from "@/components/Seo";
 import { PostBlock } from "@/components/PostBlock";
 import { getPosts } from "@/lib/service";
 
 export default function HomePage({ posts }: { posts: any }) {
   return (
     <>
+      <SEO
+        title="Welcome to Jeffrey's Blog"
+        description="Access all tech content and beyond"
+      />
       <Hero />
       <div className="container mx-auto py-8">
         <h3 className="text-xl">All my posts ({posts.length})</h3>
